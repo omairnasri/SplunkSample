@@ -14,7 +14,7 @@ I chose to use Java's Spring Boot web framework because it is a lightweight fram
 The project is organized into two main categories, the source and test folders. 
 
 #### Source Code
-The source folder contains the controller and service logic.
+The source code is separated into controller and service logic.
 
 ##### Controller 
 The controller logic involves reading in the log text data, and handle the routing logic. The controller is a higher level component in comparison to the Service component, which does the heavy lifting.
@@ -24,7 +24,7 @@ The service component includes methods to abstract away the logic of reading in 
 
 
 #### Test Code
-The testing component includes using MockMvc which enbables us to call our endpoint and ensure the correct data is being sent in the response. Specifically, the tests check that the response we get from /data is an OK response with a status code of 200, and compare the first element of the response object to some data that we are expecting. We're also checking to ensure there are 1200 entries in the JSON object that were parsed from the log file.
+The testing component includes using MockMvc which enbables us to call our endpoint and ensure the correct data is recieved sent in the response. Specifically, the tests check that the response we get from /data is an OK response with a status code of 200, and compare the first element of the response object to some data that we are expecting. We're also checking to ensure there are 1200 entries in the JSON objects array, which contains entries that were parsed from the log file.
 The test log data file can be found [here](/src/main/resources/test.log). This contains mock data in a Log4j format.
 
 
