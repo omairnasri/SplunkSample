@@ -17,7 +17,7 @@ The project is organized into two main categories, the source and test folders.
 The source folder contains the controller and service logic.
 
 ##### Controller 
-The controller logic involves reading in the log text data, and handle the routing logic.
+The controller logic involves reading in the log text data, and handle the routing logic. The controller is a higher level component in comparison to the Service component, which does the heavy lifting.
 
 ##### Service
 The service component includes methods to abstract away the logic of reading in the log file data and storing it internally.
